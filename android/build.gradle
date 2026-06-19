@@ -1,0 +1,52 @@
+        allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://phonepe.mycloudrepo.io/public/repositories/phonepe-intentsdk-android"
+        }
+    }
+    subprojects {
+        afterEvaluate { project ->
+            if (project.hasProperty('android')) {
+                project.android {
+                    if (namespace == null) {
+                        namespace project.group
+                    }
+                    // Bypassing API 36 bug for android_intent_plus while allowing sqflite to use API 36
+                    project.android {
+                        compileSdkVersion 36
+                        ndkVersion "25.1.8937393"
+                    }
+                    
+                    compileOptions {
+                        sourceCompatibility JavaVersion.VERSION_17
+                        targetCompatibility JavaVersion.VERSION_17
+                    }
+                }
+            }
+        }
+        tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+            kotlinOptions {
+                jvmTarget = "17"
+            }
+        }
+        tasks.withType(JavaCompile).configureEach {
+            // Disable Javac system modules location bug on Windows JDK 21
+            options.compilerArgs << "-parameters"
+        }
+    }
+}
+
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

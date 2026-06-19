@@ -1,0 +1,40 @@
+
+$item1 = new App\Models\Item();
+$item1->name = 'Royal Enfield Classic 350';
+$item1->slug = 'royal-enfield-classic-350-' . Str::random(5);
+$item1->description = 'Mint condition Royal Enfield Classic 350. Only 5000 kms driven in Hyderabad.';
+$item1->price = 150000;
+$item1->image = 'sample_data/vehicles.png';
+$item1->latitude = 17.385044;
+$item1->longitude = 78.486671;
+$item1->address = 'Banjara Hills, Hyderabad';
+$item1->contact = '9876543210';
+$item1->status = 'approved';
+$item1->city = 'Hyderabad';
+$item1->state = 'Telangana';
+$item1->country = 'India';
+$item1->user_id = 3;
+$item1->category_id = 3;
+$item1->expiry_date = now()->addMonths(3);
+$item1->save();
+
+$item2 = new App\Models\Item();
+$item2->name = 'MacBook Pro M2';
+$item2->slug = 'macbook-pro-m2-' . Str::random(5);
+$item2->description = 'Used MacBook Pro M2, 16GB RAM, 512GB SSD. Perfect for developers.';
+$item2->price = 95000;
+$item2->image = 'sample_data/electronics.png';
+$item2->latitude = 17.440081;
+$item2->longitude = 78.348915;
+$item2->address = 'HITEC City, Hyderabad';
+$item2->contact = '9876543210';
+$item2->status = 'approved';
+$item2->city = 'Hyderabad';
+$item2->state = 'Telangana';
+$item2->country = 'India';
+$item2->user_id = 3;
+$item2->category_id = 1;
+$item2->expiry_date = now()->addMonths(3);
+$item2->save();
+echo "Success!\n";
+

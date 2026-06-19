@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "631956183151",
+    "project_id": "nofak-d53ef",
+    "storage_bucket": "nofak-d53ef.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631956183151:android:6ab0951d52a215de1c559a",
+        "android_client_info": {
+          "package_name": "com.knight21.nofak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631956183151-a91ihb0jdvlfmvacu7e3d5opei2a40rv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knight21.nofak",
+            "certificate_hash": "0e96ee5ef9afddd9fc7c29f1284b3a4bcf624250"
+          }
+        },
+        {
+          "client_id": "631956183151-a91ihb0jdvlfmvacu7e3d5opei2a40rv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.knight21.nofak",
+            "certificate_hash": "E0DEB499A5E2C45424B366FD982920F3AB805E9D691CE69E906CE34BA4570D"
+          }
+        },
+        {
+          "client_id": "631956183151-2nahhdidd22ftdk9mnenift605mr2u3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD-IhoQkN5fYzC4qYK_avw4vO4EhFAo40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631956183151-2nahhdidd22ftdk9mnenift605mr2u3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
