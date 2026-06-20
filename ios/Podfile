@@ -2,6 +2,9 @@
 platform :ios, '14.0'
 use_modular_headers!
 
+# Disable Swift Package Manager to avoid conflicts with CocoaPods-only plugins (e.g. google_mobile_ads)
+ENV["SWIFT_PACKAGE_MANAGER_ENABLED"] = "false"
+
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 #pod 'GoogleSignIn', '7.1'
