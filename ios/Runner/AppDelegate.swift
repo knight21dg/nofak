@@ -13,15 +13,15 @@ import FirebaseMessaging
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     GMSServices.provideAPIKey("AIzaSyCPRizDGQFK_uWegoDNGErvxOr926FNCWs")
+    if FirebaseApp.app() == nil {
+        FirebaseApp.configure()
+    }
     GeneratedPluginRegistrant.register(with: self)
       
-      SwiftAwesomeNotificationsPlugin.setPluginRegistrantCallback { registry in
-               SwiftAwesomeNotificationsPlugin.register(
-                 with: registry.registrar(forPlugin: "io.flutter.plugins.awesomenotifications.AwesomeNotificationsPlugin")!)
-           }
-        if FirebaseApp.app() == nil {
-            FirebaseApp.configure()
-        }
+    SwiftAwesomeNotificationsPlugin.setPluginRegistrantCallback { registry in
+        SwiftAwesomeNotificationsPlugin.register(
+            with: registry.registrar(forPlugin: "io.flutter.plugins.awesomenotifications.AwesomeNotificationsPlugin")!)
+    }
 
     return super.application(application, didFinishLaunchingWithOptions: launchOptions)
   }

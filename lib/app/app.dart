@@ -106,14 +106,14 @@ Future<void> _initializeFirebase() async {
     );
   }
 
-  try {
-    await FirebaseAppCheck.instance.activate(
-      appleProvider: kDebugMode ? AppleProvider.debug : AppleProvider.appAttestWithDeviceCheckFallback,
-      androidProvider: kDebugMode ? AndroidProvider.debug : AndroidProvider.playIntegrity,
-    );
-  } catch (e) {
-    debugPrint("Firebase App Check error: $e");
-  }
+  //try {
+  //  await FirebaseAppCheck.instance.activate(
+  //    appleProvider: kDebugMode ? AppleProvider.debug : AppleProvider.appAttestWithDeviceCheckFallback,
+  //    androidProvider: kDebugMode ? AndroidProvider.debug : AndroidProvider.playIntegrity,
+  //  );
+  //} catch (e) {
+  //  debugPrint("Firebase App Check error: $e");
+  //}
 
   FirebaseMessaging.onBackgroundMessage(
     NotificationService.onBackgroundMessageHandler,
