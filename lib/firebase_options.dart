@@ -58,11 +58,12 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDD-IhoQkN5fYzC4qYK_avw4vO4EhFAo40',
-    appId: '1:631956183151:ios:xxxxxxxxxxxxxxxxxxxxxx',
+    apiKey: 'AIzaSyDYx3p3G-s_bL-M-_GeupzSstjtidXG96Q',
+    appId: '1:631956183151:ios:aaf89b420f2001351c559a',
     messagingSenderId: '631956183151',
     projectId: 'nofak-d53ef',
     storageBucket: 'nofak-d53ef.firebasestorage.app',
     iosBundleId: 'com.knight21.nofak',
+    iosClientId: '631956183151-v6o6e8vepmqekhc028k4bp6nqk7r8tld.apps.googleusercontent.com',
   );
 }
