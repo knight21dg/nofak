@@ -29,7 +29,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>app-1-6343732161-ios-5cc58a2dcfbbb66b2b5d40</string>
+				<string>app-1-631956183151-ios-aaf89b420f2001351c559a</string>
 			</array>
 		</dict>
 		<dict>
@@ -65,6 +65,12 @@
 		<string>items-beta</string>
 		<string>https</string>
 		<string>http</string>
+		<string>ppemerchantsdkv1</string>
+		<string>ppemerchantsdkv2</string>
+		<string>ppemerchantsdkv3</string>
+		<string>ppemerchantsdkv4</string>
+		<string>ppemerchantsdkv5</string>
+		<string>supermoney</string>
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
