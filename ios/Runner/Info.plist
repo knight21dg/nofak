@@ -37,7 +37,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>com.googleusercontent.apps.6343732161-2d2p8ap7p3t8telagot152vrnotuptav</string>
+				<string>com.googleusercontent.apps.631956183151-v6o6e8vepmqekhc028k4bp6nqk7r8tld</string>
 			</array>
 		</dict>
 		<dict>
@@ -56,7 +56,7 @@
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3940256099942544~1458002511</string>
 	<key>GIDClientID</key>
-	<string>6343732161-2d2p8ap7p3t8telagot152vrnotuptav.apps.googleusercontent.com</string>
+	<string>631956183151-v6o6e8vepmqekhc028k4bp6nqk7r8tld.apps.googleusercontent.com</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>sms</string>
@@ -121,5 +121,7 @@
     		<key>NSAllowsArbitraryLoadsInWebContent</key>
     		<false/>
     	</dict>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 </dict>
 </plist>
